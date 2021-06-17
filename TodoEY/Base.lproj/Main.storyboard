@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="CHi-Rv-UIf" id="8Sd-dc-jRx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TodoEy" id="zeJ-H6-Dfr"/>
+                    <navigationItem key="navigationItem" title="TodoEy" id="zeJ-H6-Dfr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="reu-N5-bxF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addItem:" destination="CHi-Rv-UIf" id="iRh-GZ-HXp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCT-ep-IKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +54,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
